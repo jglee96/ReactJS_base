@@ -25,12 +25,13 @@
     },
     "Hello I'm a span"
   );
-  const btn = React.createElement("button", {
-    onClick: () => console.log("im clicked"),
-    style: {
-      backgroundColor: "tomato",
-    }
-  },
+  const btn = React.createElement("button",
+    {
+      onClick: () => console.log("im clicked"),
+      style: {
+        backgroundColor: "tomato",
+      }
+    },
     "Click me");
   const container = React.createElement("div", null, [h3, btn]);
   ReactDOM.render(container, root);
